@@ -191,13 +191,25 @@ http://localhost:3000
 
 # Deployment
 
-The project is deployed on **Vercel**.
+The project is configured for seamless deployment on **Vercel**.
 
-Before deployment:
+### Step-by-Step Vercel Deployment Instructions
 
-- Configure `DATABASE_URL` in Vercel Environment Variables.
-- Ensure the hosted PostgreSQL database is accessible.
-- Run Prisma migrations against the production database.
+1. **Push your code** to your GitHub repository (e.g. `https://github.com/ck-solo/notice-board.git`).
+2. **Import the repository** in the Vercel Dashboard:
+   - Click **Add New** > **Project**.
+   - Select your `notice-board` repository.
+3. **Configure Environment Variables**:
+   - In the **Environment Variables** section during configuration, add:
+     - Name: `DATABASE_URL`
+     - Value: `<Your PostgreSQL connection string>`
+4. **Deploy**:
+   - Click **Deploy**. Vercel will automatically build the project using `npm run build`, which triggers `prisma generate` to compile the Prisma client before compiling the Next.js pages.
+5. **Set up the Database Schema** (First-time deployment or schema updates):
+   - Make sure your database contains the necessary tables. You can push the schema defined in `schema.prisma` directly to your production database by running the following command locally:
+     ```bash
+     npx prisma db push
+     ```
 
 ---
 
