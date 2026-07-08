@@ -139,8 +139,8 @@ Features:
 ## 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
-cd YOUR-REPOSITORY
+git clone https://github.com/ck-solo/notice-board.git
+cd notice-board
 ```
 
 ## 2. Install dependencies
