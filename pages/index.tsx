@@ -159,7 +159,7 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
             <div className="bg-white dark:bg-zinc-900/40 border border-neutral-200/80 dark:border-zinc-800/50 rounded-2xl p-4 flex flex-col justify-between hover:border-neutral-300 dark:hover:border-zinc-700/80 transition-colors shadow-xs">
               <span className="text-xs text-neutral-500 dark:text-zinc-400 font-semibold uppercase tracking-wider">Total Notices</span>
-              <span className="text-2xl font-bold mt-2 text-neutral-900 dark:text-zinc-550">{totalCount}</span>
+              <span className="text-2xl font-bold mt-2 text-neutral-900 dark:text-white-550">{totalCount}</span>
             </div>
             <div className="bg-white dark:bg-zinc-900/40 border border-neutral-200/80 dark:border-zinc-800/50 rounded-2xl p-4 flex flex-col justify-between hover:border-neutral-300 dark:hover:border-zinc-700/80 transition-colors shadow-xs">
               <span className="text-xs text-pink-500 dark:text-pink-400 font-semibold uppercase tracking-wider flex items-center gap-1.5">
