@@ -119,40 +119,7 @@ export default function Home() {
   const eventCount = notices.filter((n) => n.category === "Event").length;
 
   return (
-    <div className="min-h-screen bg-neutral-50 dark:bg-zinc-950 text-neutral-800 dark:text-zinc-100 selection:bg-violet-500 selection:text-white pb-20">
-      
-      {/* Decorative top ambient glow */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[350px] bg-gradient-to-b from-violet-500/5 dark:from-violet-500/10 via-transparent to-transparent blur-3xl pointer-events-none rounded-full" />
-
-      {/* Main Container */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 relative z-10">
-        
-        {/* Header / Nav */}
-        <header className="flex flex-col sm:flex-row justify-between items-center gap-4 pb-8 mb-8 border-b border-neutral-200 dark:border-zinc-800/80">
-          <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-violet-500 to-pink-500 flex items-center justify-center shadow-sm shadow-violet-500/10">
-              <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 4a2 2 0 012 2v8a2 2 0 01-2 2h-3m-1 0V9a2 2 0 00-2-2h-3" />
-              </svg>
-            </div>
-            <div>
-              <h1 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-neutral-900 dark:text-zinc-50">
-                Notice Board
-              </h1>
-              <p className="text-xs text-neutral-500 dark:text-zinc-400 font-medium">Campus Updates & Announcements</p>
-            </div>
-          </div>
-          
-          <Link
-            href="/notices/new"
-            className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 bg-gradient-to-r from-violet-600 to-pink-600 hover:from-violet-500 hover:to-pink-500 text-white font-semibold px-5 py-2.5 rounded-xl transition-all duration-300 shadow-md shadow-violet-500/10 active:scale-[0.98] group cursor-pointer"
-          >
-            <svg className="w-4.5 h-4.5 text-white group-hover:rotate-90 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
-            </svg>
-            <span>Add Notice</span>
-          </Link>
-        </header>
+    <>
 
         {/* Stats Dashboard Grid */}
         {!loading && !errorMsg && totalCount > 0 && (
@@ -452,7 +419,6 @@ export default function Home() {
             )}
           </>
         )}
-      </div>
-    </div>
+    </>
   );
 }

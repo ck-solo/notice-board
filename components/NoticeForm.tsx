@@ -68,7 +68,7 @@ export default function NoticeForm({
       className="max-w-2xl mx-auto bg-white dark:bg-zinc-900 border border-neutral-200/85 dark:border-zinc-800/80 shadow-md rounded-3xl p-6 sm:p-10 space-y-6 transition-all duration-300"
     >
       <div className="text-center space-y-2">
-        <h2 className="text-3xl font-extrabold tracking-tight bg-gradient-to-r from-violet-500 via-pink-500 to-cyan-500 bg-clip-text text-transparent">
+        <h2 className="text-3xl font-extrabold tracking-tight text-violet-600 dark:text-violet-400">
           {buttonText}
         </h2>
         <p className="text-sm text-neutral-500 dark:text-zinc-400">
@@ -191,7 +191,7 @@ export default function NoticeForm({
       <button
         type="submit"
         disabled={loading}
-        className="w-full mt-2 relative group overflow-hidden bg-gradient-to-r from-violet-600 via-pink-600 to-cyan-600 hover:from-violet-555 hover:via-pink-555 hover:to-cyan-555 text-white font-bold py-3.5 px-6 rounded-xl transition-all duration-300 shadow-md shadow-violet-500/10 active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none cursor-pointer"
+        className="w-full mt-2 relative group overflow-hidden bg-violet-600 hover:bg-violet-700 active:bg-violet-800 text-white font-bold py-3.5 px-6 rounded-xl transition-all duration-300 shadow-md shadow-violet-500/10 active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none cursor-pointer"
       >
         <div className="flex items-center justify-center space-x-2">
           {loading ? (
